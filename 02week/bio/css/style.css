@@ -1,10 +1,18 @@
 body{
     background-color: white;
     background-image: url('praying-mantis.jpg');
-    background-position: right;
+    background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 800px;
+    background-size: 900px;
+    padding: 20px;
+    margin: 10px
+ }
+ h1 {
+     color: purple;
+     font-family: monospace;
+     text-align: left; 
+     
 
  }
 
@@ -13,15 +21,19 @@ div {
     width: 530px;
     text-align: justify;
     margin: 40px;
-    padding-left: 400px
-    
+    padding-left: 30px
+    }
 
-   }
+ h3 {
+    float: inherit;
+    text-align: cen
 
+ } 
 
 #box {
     height: 90px;
     width: 530px;
+    font-family: monospace;
     }
 
 
