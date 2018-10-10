@@ -1,6 +1,28 @@
 body{
-     background:"./css/IMG_20170408_134400.jpg";
-}
-h1{
-    font-size: 60px;
-}
+    background-color: white;
+    background-image: url('praying-mantis.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 800px;
+
+ }
+
+div {
+    float: left;
+    width: 530px;
+    text-align: justify;
+    margin: 40px;
+    padding-left: 400px
+    
+
+   }
+
+
+#box {
+    height: 90px;
+    width: 530px;
+    }
+
+
+
