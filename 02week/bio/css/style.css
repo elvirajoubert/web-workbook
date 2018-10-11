@@ -40,5 +40,23 @@ body{
 
     }
 
+.nav_bar {
+    margin: 0 auto;
+    border-bottom: 1px solid #000000;
+    padding: 0px 20px 0px 20px;
+    height: 65px;
+    }
+    .nav_bar ul{
+        padding:0px;
+        list-style: none;
+        height:65px;
+        margin: top;
+        }
+        .nav_bar ul li{
+            float: left;
+            font-size: 10px;
+            font-width:bold;
+            
+        }
 
 
