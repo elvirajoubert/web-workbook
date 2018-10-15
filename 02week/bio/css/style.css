@@ -31,10 +31,27 @@ body{
    color: black;
    top: 5em;
    left: 3em;
-   text-align: left;
+   text-align: center;
    padding: 20px;
    font-size: 18px;
    font-family: 'Audiowide', cursive;
+}
+
+   .banner {
+       width: 65%;
+       display: block;
+       padding: 0 220px;
+      
+
+
+          }
+    .banner img {
+        display: block;
+        margin: 0 auto;}
+
+    }
+
+   
   
   }
   .navbar ul{
