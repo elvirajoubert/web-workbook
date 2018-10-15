@@ -1,7 +1,8 @@
 body{
     background-color: black;
-    background-image: url(/02week/bio/a.jpg);
-    background-size: 200%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 
     
     
