@@ -2,15 +2,20 @@
 body {
     background-image:url("../img/airline.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: sticky;
+    margin: 0 auto;
+    font-family:'Open Sans', sans-serif;
+    
 }
 .top {
     width: 100%;
-    height: 12%;
-    margin: 0px;
-    position: absolute;
+    height: 13%;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: fixed;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -18,6 +23,7 @@ body {
     z-index: -1;
     border-bottom: 1px solid white;
     background-color: #1b3b53;
+    font-size: 1.5em;
 }
 
 .logo{
@@ -43,11 +49,16 @@ body {
     list-style-type: none;
     display: inline-block;
     margin-top: 10%;
+    margin-right: 20px;
+    margin-left: 5px;}
 
-}
-.home:hover{
-    color: #33997f;
-}
+
+nav, a:hover {
+    color:#33997f;}
+    
+
+
+
 .iconbar {
     margin: 250px;
     padding:20px;
@@ -55,8 +66,10 @@ body {
     float: left;
     left: -105px;
     top:-115px;
+    border-radius: 3px;
+  
     
-}
+    }
 
 .button{
     display: inline-block;
@@ -68,11 +81,12 @@ body {
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 3px;
+    border-radius: 0px;
 
 }
 .button:hover{
-    background-color: #0066cc;    
+    background-color: #0066cc;  
+    border-radius: 3px;  
 }
 #flight{
     background-image: url("../img/plane-icon.png")
@@ -117,6 +131,7 @@ section {
     position: relative;
     /* box-sizing: border-box; */
     }
+
 input[type="text"], input[type="date"] {
     display:inline-block;
     /* margin-bottom: 20px; */
@@ -169,6 +184,6 @@ input[type="submit"] {
     right:25px;
     height: 35px;
     background-color: dodgerblue;
-    border-radius: 2px;
-    border:none;
     color:white;
+    border: none;
+}
