@@ -28,15 +28,17 @@ body {
 
  header ul{
         margin:0;
-        padding: 20px;
-        float: right;}
+        padding: 20px; 
+        float: right;
+        
+    }
 
 /*Header*/
 header{
 background: rgb(88, 82, 90);
 color:white;
-padding-top: 30px;
-min-height: 70px;
+padding-top: 10px;
+height: 120px;
 border-bottom: whitesmoke 2px solid;}
 
 header a {
@@ -49,6 +51,7 @@ header nav {
 float: right;
 margin-top: -50x;
 margin-bottom: 10px;
+padding-bottom: 
 }
 
 
@@ -72,7 +75,7 @@ header a:hover{
 
 #showcase{
     min-height: 400px;
-    background: url('img/house.jpg') no-repeat -400px;
+    background: url('.\.\img\house.jpg') no-repeat 400px;
     text-align: center;
     color: whitesmoke;
     }
@@ -113,7 +116,7 @@ header a:hover{
         color: whitesmoke;}
 
     
-}
+
 header ul{
     margin:0;
     padding: 0;
@@ -143,17 +146,20 @@ header li{
     }
 
 
-footer .copyright {
-padding: 10px;
-margin-top: 10px;
-color: white;
-background-color: #555;
-position: relative;
-}
 
-#footer h3 {
+
+
+
+.copyright {
 color: #fff;
 line-height: 32px;
 margin-top: 10px;
 list-style: none;
-text-align: center;}
+text-align: center;
+padding: 10px;
+margin-top: 10px;
+color: white;
+background-color: #555;
+/* position: relative; */
+
+}
