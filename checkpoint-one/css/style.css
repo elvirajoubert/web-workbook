@@ -10,11 +10,12 @@ body {
     width: 80%;
     margin: auto;
     overflow: hidden;
-    } 
+        } 
 .container img {
     width: 70%;
     height: 70%;
     border-radius: 40px;
+    
    
 }
 
@@ -26,9 +27,6 @@ padding-top: 8px;
 height: 120px;
 border-bottom: whitesmoke 2px solid;
 }
-
-
-
 
 nav {
 float: right;
