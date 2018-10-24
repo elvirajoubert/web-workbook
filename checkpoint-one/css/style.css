@@ -60,6 +60,7 @@ nav a:hover {
     font-weight: bold;
 }
 
+/* Main container with banner */
 header #showcase h1 {
     margin: 0;
     float: right;
@@ -145,18 +146,19 @@ header .highlight {
     width: 30%;
     padding: 10px;
     text-align: center;
+    text-justify: inter-word;
     color: white;
 }
 
-.box h3 a:hover {
-    color: #889b43;
-    font-weight: bold;
+#boxes .box h3 {
+    text-align: center;
 }
 
 #boxes .box img {
     width: 310px;
     height: 320px;
     border-radius: 30px;
+
 }
 
 .copyright {
