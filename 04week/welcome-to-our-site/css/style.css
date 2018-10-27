@@ -1,0 +1,36 @@
+.title-container {
+    background-color: rgb(45, 201, 201);
+    margin: 20px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title-container h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.main-box {
+    background-color: black;
+    margin: 20px;
+    height: 400px;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#column1 {
+    display: block;
+    align-items: center;
+
+}
+
+#column1 h2 {
+    text-align: center;
+
+}
