@@ -2,7 +2,6 @@ body {
     max-width: 850px;
     margin: 0 auto;
     font-style: normal;
-
 }
 
 
@@ -10,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .banner {
@@ -36,9 +34,6 @@ h1 {
     justify-content: space-between;
     width: 850px;
     height: 450px;
-
-
-
 }
 
 .flex {
@@ -50,14 +45,12 @@ h1 {
     display: flex;
     justify-content: space-around;
     font-family: sans-serif;
-
 }
 
 ul {
     list-style: none;
     padding: 5px;
     line-height: 15px;
-
 }
 
 #flex {
@@ -73,7 +66,7 @@ ul {
     font-style: normal;
     line-height: 19px;
     text-decoration: none;
-    }
+}
 
 #office {
     display: flex;
@@ -81,5 +74,3 @@ ul {
     text-decoration: none;
     line-height: 19px;
 }
-
-
