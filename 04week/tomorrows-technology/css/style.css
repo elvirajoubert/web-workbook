@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+}
+.main-container {
+    display: flex;
+    padding: 0 auto;
+    margin-top: 2px solid;
+    }
+.top-image {
+    padding: 10px;
+}
+#sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
