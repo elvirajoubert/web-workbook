@@ -31,6 +31,7 @@ h1 {
 
 .main-container {
     display: flex;
+    margin-top: 15px;
     justify-content: space-between;
     width: 850px;
     height: 450px;
@@ -44,13 +45,13 @@ h1 {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    font-family: sans-serif;
-}
+    }
 
 ul {
     list-style: none;
-    padding: 5px;
+    padding: 1px;
     line-height: 15px;
+    align-items: column;
 }
 
 #flex {
@@ -64,7 +65,7 @@ ul {
 #location {
     display: flex;
     font-style: normal;
-    line-height: 19px;
+    line-height: 26px;
     text-decoration: none;
 }
 
@@ -73,4 +74,8 @@ ul {
     flex-direction: column;
     text-decoration: none;
     line-height: 19px;
+}
+.name {
+    width: 97%;
+    margin: 0;
 }
