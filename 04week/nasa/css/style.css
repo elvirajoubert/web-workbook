@@ -1,13 +1,16 @@
 body {
     max-width: 850px;
     margin: 0 auto;
+    font-style: normal;
+
 }
 
-.big-container{
+
+.big-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
 .banner {
@@ -34,46 +37,49 @@ h1 {
     width: 850px;
     height: 450px;
 
-    
-        
+
+
 }
-.flex  {
-    width:850px;
-    height:324px;
-    background-color:rgb(179, 176, 176);
+
+.flex {
+    width: 850px;
+    height: 324px;
+    background-color: rgb(214, 208, 208);
     font-family: sans-serif;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
 
 }
 
-ul{
+ul {
     list-style: none;
-    padding: 0px;
+    padding: 5px;
+    line-height: 15px;
+
 }
 
-
-
-
- #flex box {
+#flex {
     display: flex;
     align-items: column;
     list-style: none;
     justify-content: center;
     flex-direction: column-reverse;
 }
- 
-.location {
-    display: flex;
-    
 
-}
+#location {
+    display: flex;
+    font-style: normal;
+    line-height: 19px;
+    text-decoration: none;
+    }
+
 #office {
     display: flex;
     flex-direction: column;
-   
-
-
+    text-decoration: none;
+    line-height: 19px;
 }
+
+
