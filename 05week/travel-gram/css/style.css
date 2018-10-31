@@ -1,1 +1,135 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 1em;
+}
+.grid >div {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1;
+    grid-auto-rows: minmax(100%, auto);
+    grid-gap: 1em;
+    grid-template-areas: "item" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "box9" "box10";
+    justify-content: space-around;
+    align-content: center;
+}
+    
+
+
+
+.grid > div {
+  background-color: rgba(248, 213, 213, 0.8);
+  text-align: center;
+  padding:20px 0;
+  font-size: 1px;
+  grid-gap: 3em;
+  grid-auto-flow: column;
+    
+}
+
+.item1 {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    /* grid-area: One; */
+}
+
+
+.item1 img {
+    padding: 1em;
+    width: 300px;
+    height: 80%;
+}
+
+.item1 #p {
+    justify-content: left;
+    font-size: 5px;
+   
+}
+
+.item1 #button {}
+    
+
+    
+.input #button {
+    height: 25px;
+    width: 60%;}
+
+.input #radio {
+    width: 40px;
+    height: 25px;
+}
+
+
+.item2 {
+    grid-area: Two;
+    grid-template-columns: 200px 200px;
+}
+
+.item2 img {
+    display: grid;
+    padding: 1em;
+    width: 400px;
+    height: 40%;
+}
+
+.item2 p {
+    display: grid;
+    grid-auto-rows: 1em;
+}
+
+.item2 #button {
+    display: grid;
+    grid-template-columns: 1
+}
+
+/* 
+.item3 {
+    grid-area: Three;
+}
+
+.itembox4 {
+    grid-area: Four;
+}
+
+.item5 {
+    grid-area: Five;
+}
+
+.item6 {
+    grid-area: Six;
+}
+
+.item7 {
+    grid-area: Seven;
+}
+
+.item8 {
+    grid-area: Eight;
+}
+
+.item9 {
+    grid-area: Nine;
+}
+
+.item10 {
+    grid-area: Ten;
+} */
 
