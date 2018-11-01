@@ -1,0 +1,116 @@
+body {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.container>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.trigger {
+    display: grid;
+    justify-content: center;
+
+}
+
+
+.box1 {
+    background-color: blue;
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.box2 {
+    background-color: green;
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.box2 {
+    background-color: yellow;
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.box3 {
+    background-color: purple;
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.box4 {
+    background-color: aqua;
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.box5 {
+    background-color: black;
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.box6 {
+    background-color: red;
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.box7 {
+    background-color: plum;
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.box8 {
+    background-color: grey;
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.box9 {
+    background-color: brown;
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.box10 {
+    background-color: lightskyblue;
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.trigger:hover :nth-child(odd) {
+    transform:translate(-500px) scale(2) rotateZ(-360deg);
+    transition: all 2s ease-in-out;
+}
+
+.trigger:hover :nth-child(even) {
+    transform:translate(500px), scale(.5), rotateZ(360deg);
+    transition: all 2s ease-in-out;
+}
