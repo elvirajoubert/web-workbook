@@ -10,11 +10,6 @@ body {
     margin: 10px;
 }
 
-.trigger {
-    display: grid;
-    justify-content: center;
-
-}
 
 
 .box1 {
@@ -111,6 +106,6 @@ body {
 }
 
 .trigger:hover :nth-child(even) {
-    transform:translate(500px), scale(.5), rotateZ(360deg);
-    transition: all 2s ease-in-out;
+    transform:translate(500px) scale(.5) rotateZ(360deg);
+    transition: all 2.3s ease-in-out;
 }
