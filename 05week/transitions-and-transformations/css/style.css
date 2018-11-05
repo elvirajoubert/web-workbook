@@ -100,12 +100,28 @@ body {
     height: 50px;
 }
 
+.box11 {
+    background-color: rgb(25, 170, 90);
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
+.box12 {
+    background-color: rgb(65, 14, 14);
+    display: inline-block;
+    margin: .5em;
+    width: 50px;
+    height: 50px;
+}
+
 .trigger:hover :nth-child(odd) {
-    transform:translate(-500px) scale(2) rotateZ(-360deg);
+    transform: translate(-500px) scale(2) rotateZ(-360deg);
     transition: all 2s ease-in-out;
 }
 
 .trigger:hover :nth-child(even) {
-    transform:translate(500px) scale(.5) rotateZ(360deg);
+    transform: translate(500px) scale(.5) rotateZ(360deg);
     transition: all 2.3s ease-in-out;
 }
