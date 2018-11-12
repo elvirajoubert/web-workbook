@@ -1,22 +1,24 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
 body {
     font-size: 15px;
     line-height: 1.5;
     padding: 0;
     margin: 0;
-    background-color: rgb(129, 101, 136);
+    background-color: rgb(140, 102, 148);
     font-family: 'Mali', cursive;
+    color: whitesmoke;
 }
 
-.container {
+/* Figi's Grooming text */
+
+.container-one {
     width: 80%;
     margin: auto;
     overflow: hidden;
-}
-
-.container img {
-    width: 70%;
-    height: 70%;
-    border-radius: 40px;
 }
 
 /*Header*/
@@ -24,52 +26,9 @@ header {
     background: rgb(88, 82, 90);
     color: white;
     padding-top: 8px;
+    margin: 0 auto;
     height: 120px;
     border-bottom: whitesmoke 2px solid;
-}
-
-nav {
-    display: grid;
-    margin-top: 1px;
-    margin-bottom: 5px;
-    padding: 0 10px 0 20px;
-    list-style: none;
-}
-
-.navbar a { 
-    display: grid;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 17px;
-    padding: 0;
-}
-
-nav ul {
-    margin: 10px;
-    padding: 15px;
-    display:grid;
-    justify-items: flex-end;
-    
-}
-
-nav li {
-    display: inline;
-   list-style-type: none;
-    padding: 0 20px 0 20px;
-}
-
-nav a:hover {
-    color: #d4eb83;
-    font-weight: bold;
-}
-
-/* Main container with banner */
-header #showcase h1 {
-    margin: 0;
-    float: right;
-    padding: 10px;
-    margin: 10px;
 }
 
 header p {
@@ -82,11 +41,51 @@ header .highlight {
     font-weight: bold;
 }
 
-#showcase {
-    min-height: 500px;
-    text-align: center;
-    color: whitesmoke;
+.navbar {
+    display: grid;
+    justify-content: flex-end;
+    width: 80%;
+    margin: -30px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar a {
+    display: grid;
+    justify-items: flex-end;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 0;
+}
+
+.navbar ul {
+    margin: 10px;
     padding: 25px;
+    display: grid;
+    justify-items: self-end;
+    text-decoration: none;
+}
+
+
+nav li {
+    padding: 0 10px 0 10px;
+}
+
+nav a:hover {
+    color: #d4eb83;
+    font-weight: bold;
+}
+
+/* Middle Banner with image */
+
+.container-two {
+    width: 70%;
+    height: 70%;
+    border-radius: 40px;
+    box-shadow: 0 0 12px 15px whitesmoke;
+    display: flex;
+    justify-items: center;
 }
 
 #showcase h1 {
@@ -100,53 +99,74 @@ header .highlight {
     font-size: 20px;
 }
 
-/* container for newsletter */
-#newsletter {
-    padding: 1px;
-    color: rgb(68, 67, 67);
-    background: rgb(230, 207, 230);
+/* container for booking */
 
+#booking {
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    background-color: rgb(235, 225, 235);
+    color: black;
 }
 
-#newsletter h2 {
-    float: left;
-    padding: 10px;
-    margin-right: 150px;
-    margin-left: 430px
+.animal_selector {
+    display: flex;
+    justify-items: center;
 }
 
-
-
-#newsletter form {
-    float: right;
-    padding: 27px;
-    height: 25px;
-    margin: 0 auto;
-
-
-}
-
-#newsletter input[type="email"] {
+.container-three img {
+    /* min-width: 320px;
+    max-width: 1220px; */
+    display: flex;
+    background-color: none;
+    width: 40px;
+    height: 40px;
     padding: 3px;
-    height: 25px;
+    flex-direction: row;
 }
 
-.button1 {
-    height: 38px;
+h2 {
+    display: grid;
+    justify-items: flex-start;
+}
+
+h3 {
+    display: grid;
+    justify-items: flex-start;
+
+}
+
+.select-dates form {
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    margin-left: 50px;
+}
+
+h3 {
+    margin-left: 50px;
+    padding:7px;
+}
+.button {
+    height: 25px;
+    display: grid;
+    justify-content: center;
     background-color: rgb(165, 128, 165);
-    border: 0;
+    margin-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
     color: whitesmoke;
 }
-
 /* Boxes */
 #boxes {
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 #boxes .box {
-    float: left;
+    display: flex;
+    justify-items: center;
     width: 30%;
     padding: 10px;
     text-align: center;
@@ -155,17 +175,18 @@ header .highlight {
 }
 
 #boxes .box h3 {
-    text-align: center;
+    text-align: justify;
 }
 
 #boxes .box img {
     width: 310px;
     height: 320px;
     border-radius: 30px;
+  
 
 }
 
-.copyright {
+#social-media {
     color: #fff;
     line-height: 32px;
     margin-top: 10px;
