@@ -7,20 +7,9 @@ body {
     font-family: 'Mali', cursive;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.container img {
-    width: 70%;
-    height: 70%;
-    border-radius: 40px;
-}
-
 /*Header*/
 header {
+    display: grid;
     background: rgb(88, 82, 90);
     color: white;
     padding-top: 8px;
@@ -28,6 +17,31 @@ header {
     border-bottom: whitesmoke 2px solid;
 }
 
+.container-one {
+    display: grid;
+    justify-items: flex-start;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.container-two {
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden; 
+}
+
+.container-two img {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 0 0 20px 10px whitesmoke;
+    
+}
 nav {
     float: right;
     margin-top: -50x;
@@ -63,7 +77,7 @@ nav a:hover {
 /* Main container with banner */
 header #showcase h1 {
     margin: 0;
-    float: right;
+    float: center;
     padding: 10px;
     margin: 10px;
 }
@@ -98,6 +112,7 @@ header .highlight {
 
 /* container for newsletter */
 #newsletter {
+    display: grid;
     padding: 1px;
     color: rgb(68, 67, 67);
     background: rgb(230, 207, 230);
@@ -111,15 +126,11 @@ header .highlight {
     margin-left: 430px
 }
 
-
-
 #newsletter form {
     float: right;
     padding: 27px;
     height: 25px;
     margin: 0 auto;
-
-
 }
 
 #newsletter input[type="email"] {
@@ -138,6 +149,7 @@ header .highlight {
 
 /* Boxes */
 #boxes {
+    display: grid;
     margin-top: 20px;
 }
 
