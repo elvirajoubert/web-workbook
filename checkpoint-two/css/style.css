@@ -1,39 +1,54 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
 body {
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     padding: 0;
     margin: 0;
     background-color: rgb(140, 102, 148);
     font-family: 'Mali', cursive;
     color: whitesmoke;
-}
+    /* text-align: center; */
+} 
 
 /* Figi's Grooming text */
 
-.container-one {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
 /*Header*/
 header {
+    display: grid;
+    justify-self: flex-start;
+}
+
+.container-one {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr, 2fr;
+    width: 100%;
+    height: 130px;
+    margin: auto;
+    overflow: hidden;
     background: rgb(88, 82, 90);
     color: white;
-    padding-top: 8px;
+    padding-top: 17px;
     margin: 0 auto;
-    height: 120px;
+    /* width: 300px;
+    height: 130px; */
     border-bottom: whitesmoke 2px solid;
 }
+
+/* #companyname div {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 0 auto;} */
 
 header p {
     text-align: left;
     margin: 20px;
+
 }
 
 header .highlight {
@@ -44,32 +59,42 @@ header .highlight {
 .navbar {
     display: grid;
     justify-content: flex-end;
-    width: 80%;
-    margin: -30px;
-    list-style: none;
-    text-decoration: none;
+    grid-column: 2;
+    width: 100%;
+    margin: 20px;
 }
 
 .navbar a {
-    display: grid;
-    justify-items: flex-end;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 17px;
-    padding: 0;
+    font-size: 18px;
+
+
 }
 
 .navbar ul {
+    display: inline-block;
     margin: 10px;
     padding: 25px;
-    display: grid;
-    justify-items: self-end;
+    list-style: none;
     text-decoration: none;
+
 }
 
 
-nav li {
-    padding: 0 10px 0 10px;
+.navbar ul li {
+    justify-items: flex-end;
+    display: inline-grid;
+    padding: 3px 15px 3px 40px;
+
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    display: grid;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
 }
 
 nav a:hover {
@@ -80,12 +105,21 @@ nav a:hover {
 /* Middle Banner with image */
 
 .container-two {
-    width: 70%;
-    height: 70%;
-    border-radius: 40px;
-    box-shadow: 0 0 12px 15px whitesmoke;
     display: flex;
-    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3em;
+    
+
+}
+
+#showcase img {
+    width: 65%;
+    height:65%;
+    border-radius: 40px;
+    /* padding might make it a little less packed */
+    /* padding-top: .1em; */
+    box-shadow: 0 0 4px 5px whitesmoke;
 }
 
 #showcase h1 {
@@ -103,87 +137,108 @@ nav a:hover {
 
 #booking {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     flex-direction: row;
     background-color: rgb(235, 225, 235);
     color: black;
 }
-
+#booking h3 {
+    width: 70%;
+    padding: 2px;
+    margin: 7px;
+    display: flex;
+    justify-content: flex-end;
+}
 .animal_selector {
     display: flex;
-    justify-items: center;
+    justify-items: left;
+    margin: 5px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+
 }
 
 .container-three img {
-    /* min-width: 320px;
-    max-width: 1220px; */
     display: flex;
     background-color: none;
     width: 40px;
     height: 40px;
     padding: 3px;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-h2 {
+.pets_increments {
+    padding: 2px;
+    margin: 7px;
+
+}
+
+ /* h2 {
     display: grid;
-    justify-items: flex-start;
-}
+    justify-items: center; 
+} */
 
-h3 {
+ /* h3 {
     display: grid;
-    justify-items: flex-start;
+    justify-items: center;
 
-}
+} */
 
-.select-dates form {
+.select-dates  {
     display: flex;
     flex-direction: row;
-    padding: 3px;
-    margin-left: 50px;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 40px;
 }
 
-h3 {
+/* h3 {
     margin-left: 50px;
-    padding:7px;
-}
+    padding: 7px;
+} */
+
 .button {
     height: 25px;
-    display: grid;
+    display:flex;
     justify-content: center;
     background-color: rgb(165, 128, 165);
-    margin-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 30px;
     color: whitesmoke;
+    
 }
+
 /* Boxes */
-#boxes {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
+.container-four {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 6em;
+    justify-content: center;
+    align-content: center;
 }
 
-#boxes .box {
+.box {
+    width: 100%;
     display: flex;
-    justify-items: center;
-    width: 30%;
-    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    text-justify: inter-word;
-    color: white;
-}
-
-#boxes .box h3 {
-    text-align: justify;
 }
 
 #boxes .box img {
+    display: flex;
+    justify-content: center;
     width: 310px;
-    height: 320px;
+    height: 330px;
     border-radius: 30px;
-  
-
+    text-align: center;
+    box-shadow: 0 0 4px 5px whitesmoke;
+    
 }
 
 #social-media {
@@ -197,3 +252,58 @@ h3 {
     color: white;
     background-color: #555;
 }
+
+
+
+
+/* .container-four {
+    margin-top: 20px;
+    display: grid;
+    padding-top: 5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5em;
+    /* justify-content: center; 
+    justify-content: space-around;
+}
+ 
+.container-four-box {
+    width: 15%;} 
+
+
+.box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+     padding: 20px; 
+    text-align: center;
+    text-justify: inter-word; 
+    color: white;
+}
+
+.box h3 {
+     justify-content: center; 
+    text-align: center;
+}
+.box p {
+    width: 70%; 
+    
+}
+.container-four img {
+    width: 310px;
+    height: 320px;
+    border-radius: 30px;
+}
+
+#social-media {
+    color: #fff;
+    line-height: 32px;
+    margin-top: 10px;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #555;
+} */
