@@ -4,15 +4,15 @@
 }
 
 body {
+
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.7;
     padding: 0;
-    margin: 0;
-    background-color: rgb(140, 102, 148);
+    margin: auto;
+    background-color: rgb(245, 218, 248);
     font-family: 'Mali', cursive;
-    color: whitesmoke;
-    /* text-align: center; */
-} 
+    color: rgb(17, 16, 16);
+}
 
 /* Figi's Grooming text */
 
@@ -29,21 +29,14 @@ header {
     width: 100%;
     height: 130px;
     margin: auto;
-    overflow: hidden;
-    background: rgb(88, 82, 90);
+    background: rgb(118, 110, 121);
     color: white;
-    padding-top: 17px;
+    padding-top: 30px;
     margin: 0 auto;
     /* width: 300px;
     height: 130px; */
     border-bottom: whitesmoke 2px solid;
 }
-
-/* #companyname div {
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
-    margin: 0 auto;} */
 
 header p {
     text-align: left;
@@ -109,18 +102,18 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     padding-top: 3em;
-    
+
 
 }
 
 #showcase img {
     width: 65%;
-    height:65%;
+    height: 65%;
     border-radius: 40px;
-    /* padding might make it a little less packed */
-    /* padding-top: .1em; */
+    padding-top: .1em;
     box-shadow: 0 0 4px 5px whitesmoke;
 }
+
 
 #showcase h1 {
     margin-top: 10px;
@@ -139,16 +132,18 @@ nav a:hover {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    background-color: rgb(235, 225, 235);
+    background-color: rgb(168, 148, 168);
     color: black;
 }
+
 #booking h3 {
     width: 70%;
     padding: 2px;
-    margin: 7px;
+    margin: 10px;
     display: flex;
     justify-content: flex-end;
 }
+
 .animal_selector {
     display: flex;
     justify-items: left;
@@ -175,18 +170,7 @@ nav a:hover {
 
 }
 
- /* h2 {
-    display: grid;
-    justify-items: center; 
-} */
-
- /* h3 {
-    display: grid;
-    justify-items: center;
-
-} */
-
-.select-dates  {
+.select-dates {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -194,21 +178,18 @@ nav a:hover {
     margin-left: 40px;
 }
 
-/* h3 {
-    margin-left: 50px;
-    padding: 7px;
-} */
+
 
 .button {
     height: 25px;
-    display:flex;
+    display: flex;
     justify-content: center;
     background-color: rgb(165, 128, 165);
     margin-top: 30px;
     padding-left: 10px;
     padding-right: 30px;
     color: whitesmoke;
-    
+
 }
 
 /* Boxes */
@@ -232,69 +213,25 @@ nav a:hover {
 
 #boxes .box img {
     display: flex;
-    justify-content: center;
     width: 310px;
     height: 330px;
     border-radius: 30px;
     text-align: center;
     box-shadow: 0 0 4px 5px whitesmoke;
-    
-}
 
-#social-media {
-    color: #fff;
-    line-height: 32px;
-    margin-top: 10px;
-    list-style: none;
-    text-align: center;
-    padding: 10px;
-    margin-top: 10px;
-    color: white;
-    background-color: #555;
 }
 
 
-
-
-/* .container-four {
-    margin-top: 20px;
+.container-footer > div{
     display: grid;
-    padding-top: 5em;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: 5em;
-    /* justify-content: center; 
-    justify-content: space-around;
-}
- 
-.container-four-box {
-    width: 15%;} 
-
-
-.box {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-     padding: 20px; 
-    text-align: center;
-    text-justify: inter-word; 
-    color: white;
+    display: inline-grid;
+    grid-template-rows: 25% 25% auto;
+    padding: 7px;
+    border: .5px solid #fff;
 }
 
-.box h3 {
-     justify-content: center; 
-    text-align: center;
-}
-.box p {
-    width: 70%; 
-    
-}
-.container-four img {
-    width: 310px;
-    height: 320px;
-    border-radius: 30px;
-}
+
+
 
 #social-media {
     color: #fff;
@@ -302,8 +239,43 @@ nav a:hover {
     margin-top: 10px;
     list-style: none;
     text-align: center;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 0;
+    margin-top: 0;
     color: white;
-    background-color: #555;
-} */
+    background-color: #555;  
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 2px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 60%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #db379c;
+    color: white;}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;}
+
+
