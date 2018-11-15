@@ -1,349 +1,273 @@
- * {
-    margin: 0;
-     padding: 0;
- }
-
- body {
-
-     font-size: 15px;
-     line-height: 1.7;
-     padding: 0;
-     margin: auto;
-     background-color: rgb(245, 218, 248);
-     font-family: 'Mali', cursive;
-     color: rgb(17, 16, 16);
- }
-
- /* Figi's Grooming text */
-
- /*Header*/
- header {
-     display: grid;
-     justify-self: flex-start;
- }
-
- .container-one {
-     display: grid;
-     justify-content: space-evenly;
-     grid-template-columns: 1fr, 2fr;
-     width: 100%;
-     height: 130px;
-     margin: auto;
-     background: rgb(118, 110, 121);
-     color: white;
-     padding-top: 30px;
-     margin: 0 auto;
-     border-bottom: whitesmoke 2px solid;
- }
-
- header p {
-     text-align: left;
-     margin: 20px;
-     font-size: 24px;
-
- }
-
- header .highlight {
-     color: rgb(75, 204, 243);
-     font-weight: bold;
- }
-
- .navbar {
-     display: grid;
-     justify-content: flex-end;
-     grid-column: 2;
-     width: 100%;
-     margin: 20px;
- }
-
- .navbar a {
-     color: #ffffff;
-     text-transform: uppercase;
-     font-size: 18px;
-
-
- }
-
- .navbar ul {
-     display: inline-block;
-     margin: 10px;
-     padding: 25px;
-     list-style: none;
-     text-decoration: none;
-
- }
-
-
- .navbar ul li {
-     justify-items: flex-end;
-     display: inline-grid;
-     padding: 3px 15px 3px 40px;
-
-
- }
-
- .navbar ul li a {
-     text-decoration: none;
-     display: grid;
-     letter-spacing: 0.5px;
-     margin-bottom: 5px;
- }
-
- nav a:hover {
-     color: #d4eb83;
-     font-weight: bold;
- }
-
- /* Middle Banner with image */
-
- .container-two {
-     display: flex;
-     justify-content: center;
-     text-align: center;
-     padding-top: 3em;
-
-
- }
-
- #showcase p {
-     font-size: 8px;
-     margin-left: 70px;
-     margin-right: 70px;
-     text-align: justify;
- }
-
- #showcase img {
-     width: 65%;
-     height: 65%;
-     border-radius: 40px;
-     padding-top: .1em;
-     box-shadow: 0 0 4px 5px whitesmoke;
- }
-
-
- #showcase h1 {
-     margin-top: 10px;
-     font-size: 55px;
-     margin-bottom: 10px;
- }
-
- #showcase p {
-     font-weight: bold;
-     font-size: 20px;
- }
-
- /* container for booking */
-
- #booking {
-     width: 100%;
-     height: 140px;
-     display: flex;
-     justify-content: center; 
-     flex-direction: row;
-     background-color: rgb(170, 106, 136);
-     color: whitesmoke;
- }
-
- #booking h3 {
-     padding: 2px;
-     margin: 10px;
-     display: grid;
-     grid-row-gap: 50px;
-     justify-content: left;
- }
-
- .animal_selector {
-     display: flex;
-     justify-items: right;
-     margin: 5px;
-     padding: 20px;
-     margin-left: 50px;
-     margin-right: 20px;
-
- }
-
- .container-three img {
-     display: flex;
-     background-color: none;
-     width: 40px;
-     height: 40px;
-     padding: 3px;
-     flex-direction: row;
-     justify-content: space-between;
- }
-
- .pets_increments {
-     padding: 15px;
-     margin: 6px;
-     margin-top: -14px;
-
-
- }
-
- .select-dates {
-     display: flex;
-     flex-direction: column;
-     /* justify-content: space-around; */
-     justify-content: space-evenly;
-     padding: 18px;
-     margin-left: 40px;
- }
-
-
-
- .button {
-     height: 25px;
-     display: flex;
-     justify-content: center;
-     background-color: rgb(83, 60, 83);
-     margin-top: 72px;
-     padding-left: 30px;
-     padding-right: 30px;
-     border-radius: 1em;
-     color: rgb(245, 236, 236);
-
- }
-
- .button:hover {
-     opacity: 0.7;
-     color: rgb(138, 128, 161);
- }
-
- /* Boxes */
-
- #boxes {
-     /* width: 100%;
-      display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-     padding: 50px; */
-    display: grid;
-    grid-template-columns: 1fr;
-       /* grid-template-areas: 1fr 1fr 1fr; */
-    grid-gap:10px;
-    margin: 50px;
-    padding: 20px;
-    justify-content: center;
-    align-content: center;
+/* CSS Variables */
+* {
+    --primary: rgb(173, 173, 159);
+    --dark:rgb(247, 236, 236);
+    --light:white;
+    --shadow: 0 2px 5px rgba(190, 201, 98, 0.8); 
 }
 
-/* .box {
+ html {
+    box-sizing: border-box;
+    color: var(--dark); 
+} 
+
+body {
+    background: rgb(114, 114, 109);
+    margin: 30px 50px;
+    line-height: 1.4;
+    font-family: 'Life Savers', cursive;
+}
+
+header {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn {
+    background: rgb(77, 71, 71);
+    color: white;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+    border-radius: 40px;
+    float: left;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Navigation */
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.main-nav a {
+    background: rgb(255, 223, 0);
+    display: block;
+    text-decoration: none;
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(15, 14, 14);
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 7px;
+    /* box-shadow: var(--shadow); */
+}
+
+.main-nav a:hover {
+    background: #EEE8AA;
+    /* color: var(--light); */
+}
+
+/* Top Container */
+.top-container {
     display: grid;
     grid-gap: 10px;
-    padding: 0;
-    grid-template-rows: repeat(2, 1fr);
-        /* width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    text-decoration-color: darkorchid;
- } */ 
-
-.box img {
-display: grid;
-/* grid-template-rows: 1fr 1fr 1fr; */
-width: 310px;
-height: 330px;
-border-radius: 30px;
-text-align: center;
-box-shadow: 0 0 4px 5px whitesmoke;
-
+    grid-template-areas:
+        'showcase showcase top-box-a'
+        'showcase showcase top-box-b';
 }
-.box  p {
-    padding: 30px;
+
+/* Showcase */
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    /* background-size:image; */
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    box-shadow: 0 1px 2px 2px rgb(190, 201, 98, 0);
+
+
     
 }
-.box h3 {
-    padding: 20px;
+/* div.img {
+    box-shadow: 0 1px 3px 13px;
+    border-radius: 0 5px 5px 5px rgb(56, 49, 49); */
 }
- .container-footer {
-     display: grid;
-     justify-items: center;
- }
 
- #social-media {
-     color: #fff;
-     font-weight: bold;
-     line-height: 42px;
-     margin-top: 0px;
-     list-style: none;
-     text-align: center;
-     padding: 10px;
-     color: white;
-     background-color: rgb(170, 106, 136);
- }
 
- #social-media ul li {
-     list-style: none;
-     float: right;
-     margin-top: 0;
-     padding: 10px;
-     margin: 10px;
+.showcase h1 {
+    color: rgb(235, 220, 220);
+    font-size: 4rem;
+    margin-bottom: 0;
+}
 
- }
+.showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    float: left;
+    
+}
 
- .fa {
-     padding: 10px;
-     font-size: 20px;
-     margin-top: 10px;
-     width: 30px;
-     height: 30px;
-     text-align: center;
-     text-decoration: none;
-     border-radius: 60%;
- }
+/* Top Box */
+.top-box {
+    background: none;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+}
 
- .fa:hover {
-     opacity: 0.7;
- }
+.top-box .price {
+    font-size: 2.5rem;
+}
 
- .fa-facebook {
-     background: #3B5998;
-     color: white;
- }
+.top-box-a {
+    grid-area: top-box-a;
+    background-color: rgb(173, 173, 159);
+}
 
- .fa-twitter {
-     background: #55ACEE;
-     color: white;
- }
+.top-box-b {
+    grid-area: top-box-b;
+    background-color: rgb(173, 173, 159);
+}
 
- .fa-instagram {
-     background: #db379c;
-     color: white;
- }
+/* Boxes */
+.boxes {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
- .fa-pinterest {
-     background: #cb2027;
-     color: white;
- }
+.box {
+    background: grey;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    display: block;
+ 
 
- /* Mobile first */
+}
 
- /* @media (min-width: 576px) {
-    body {
-        width: 100%;
-        height: auto;
-        font-family: 'Mali', cursive;
+/* Info */
+
+.info {
+ background: var(--primary);
+box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+
+/* Portfolio */
+h3 {
+    display: block;
+    color:rgb(243, 226, 226);
+    line-height: 1;
+    text-align: center;
+    margin: 0px 0 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.portfolio {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+
+.portfolio img {
+    width: 80%;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    box-shadow: 0 2px 3px 10px;
+
+}
+.portfolio p {
+    text-align: center;
+}
+
+#feeback {
+    display: block;
+    list-style: none;
+}
+
+#feeback p a {
+    text-decoration: none;
+
+}
+
+/* Footer */
+footer {
+    /* margin-top: 2rem; */
+    background: var(--dark);
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.media {
+    display: inline;
+    flex-direction: row;
+    justify-items: center;
+    /* top: 20%;
+    left: 50%; */
+    transform: translate(-53%, -50%);
+
+
+}
+
+.media li {
+    list-style: none;
+    margin: 5px 20px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 5px;
+    transition: .5s;
+}
+
+.media li:hover {
+    color: #292929;
+    transition: .2s;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+    .top-container {
+        grid-template-areas:
+            'showcase showcase'
+            'top-box-a top-box-b';
     }
-    .container-two {
-        width: 100%;
-        height: auto;
-        
-        
+
+    .showcase h1 {
+        font-size: 2.5rem;
     }
 
-    img {
-        width: 100%;
-        height: auto;
+    .main-nav ul {
+        grid-template-columns: 1fr;
     }
 
-    #boxes {
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-areas: 1fr;
-
+    .info {
+        grid-template-columns: 1fr;
     }
- } */
+
+    .info .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+/* Small Screens */
+
+@media (max-width: 500px) {
+    .top-container {
+        grid-template-areas:
+            'showcase'
+            'top-box-a'
+            'top-box-b';
+    }
+}
