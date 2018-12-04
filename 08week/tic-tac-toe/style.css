@@ -6,6 +6,16 @@ div[data-cell] {
   border: 1px solid #808080;
   font-size: 100px;
   text-align: center;
+  
+}
+body {
+  background-image: url('img/background.jpg.jpeg');
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  margin-right: 20px;
+
 }
 
 .row {
