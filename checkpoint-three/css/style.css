@@ -1,1 +1,99 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(204, 222, 236);
+  text-align: center;
+  background-image: url('/css/img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
 
+#track {
+  background: url('img/trackpic.jpg') center left;
+  background-color: rgb(131, 123, 123);
+  height: 330px;
+  border-right: dashed 12px white;
+  box-sizing: border-box;
+  margin: 40px 0;
+}
+
+img {
+  width: 80px;
+  height: 70px;
+  border-radius: 50px;
+
+}
+
+.marvel {
+  display: block;
+  position: relative;
+}
+
+#figure1 {
+  top: 40px;
+}
+
+#figure2 {
+  top: 100px;
+}
+
+#trackInfoContainer {
+  width: 80%;
+  margin: 40px auto 0;
+  background: rgb(107, 100, 100);
+  height: 200px;
+}
+
+#trackInfoContainer h2 {
+  color: white;
+  text-transform: uppercase;
+  border-bottom: solid 1px rgb(204, 186, 186);
+  padding: 20px 0;
+  text-align: center;
+
+}
+
+.raceInfo {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  width: 50%;
+  float: left;
+
+}
+
+.raceInfo span {
+  display: block;
+  font-weight: normal;
+  font-size: 15px;
+  color: white;
+}
+
+#raceInfo1 {
+  color: rgb(163, 29, 29);
+  ;
+
+}
+
+#raceInfo2 {
+  color: yellow;
+
+}
+
+input [type="button"] {
+  background: #77b72f;
+  color: white;
+  padding: 10px 20px;
+  border: solid 1px #444;
+}
+
+input#reset {
+  background: #77b72f;
+  color: #444;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

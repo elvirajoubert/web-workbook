@@ -1,24 +1,35 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
-    <script src="main.js"></script>
+    <title>Marvels</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    
+    
 </head>
-<body>
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <a class="navbar-brand"href="index.html">MovieInfo</a>
-        </div>
+
+<body id="race">
+    <h1> Clash of Gods</h1>
+    <input type="button" value="Go!" id="go">
+    <input type="button" value="Reset" id="reset">
+
+    <div id="track">
+        <img src="./css/img/wonderwoman.jpg" alt="Wonder Woman" id="figure1" class="marvel">
+        <img src="./css/img/aries.jpg" alt="Aries God of War" id="figure2" class="marvel">
     </div>
-    </nav>
-    <div class="container">
-        <h3 class="text-center">Movie Look-Up</h3>
-        <form id="searchForm">
-        </form>
+
+    <div id="trackInfoContainer" class="clearfix">
+        <h2>Results</h2>
+        <div id="raceInfo1" class="raceInfo"> Wonder Woman <span></span></div>
+        <div id="raceInfo2" class="raceInfo"> Aries <span></span></div>
     </div>
+    
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+ <script src="./script.js"></script>
 </body>
 </html>
