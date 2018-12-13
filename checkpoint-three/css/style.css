@@ -2,14 +2,14 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: rgb(204, 222, 236);
   text-align: center;
-  background-image: url('/css/img/background.jpg');
+  background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   
 }
 
 #track {
-  background: url('img/trackpic.jpg') center left;
+  background: url('../img/trackpic.jpg') center left;
   background-color: rgb(131, 123, 123);
   height: 330px;
   border-right: dashed 12px white;
@@ -26,15 +26,15 @@ img {
 
 .marvel {
   display: block;
-  position: relative;
+  position: absolute;
 }
 
 #figure1 {
-  top: 40px;
+  top: 180px;
 }
 
 #figure2 {
-  top: 100px;
+  top: 290px;
 }
 
 #trackInfoContainer {
