@@ -13,7 +13,7 @@ function checkIfComplete() {
  $('#go').click(function () {
     console.log('onclick function');
     $('marvel').animate ()
-    $('#figure1').animate({left: '1000px'});
+    $('#figure1').animate({left: '1500px'});
     $('#figure2').animate({left: '1200px'});
     
      checkIfComplete();
@@ -39,7 +39,7 @@ $("#figure1").click(function(){
 $('#figure1').animate({left: trackWidth},
 raceTime1, function () {
 checkIfComplete();
-$('raceInfo1 span').text(' Finished in ' + ' place  and clocked in at ' + raceTime1 + ' milliseconds! ');
+$('#raceInfo1 span').text(' Finished ' + '  and clocked in at ' + raceTime1 + ' milliseconds! ');
         
 });
 })
@@ -47,9 +47,10 @@ $('raceInfo1 span').text(' Finished in ' + ' place  and clocked in at ' + raceTi
 $('#figure2').animate({left: trackWidth}, 
 raceTime2, function () {
 checkIfComplete();
-$('raceInfo2 span').text(' Finished in ' + ' place  and clocked in at ' + raceTime2 + ' milliseconds! ');
+$('#raceInfo2 span').text(' Finished ' + '  and clocked in at ' + raceTime2 + ' milliseconds! ');
 
 });
+
 
 //reset button
 
