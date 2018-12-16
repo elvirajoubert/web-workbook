@@ -1,56 +1,59 @@
-// Wait for the DOM to be ready
-'use strict'
-$(document).ready(function() {
-$("#register").click(function() {
-    var name = $("#firstname").val();
-    var lastname = $("#lastname").val();
-    var email = $("#email").val();
-    var password = $("#password").val();
-    if (name == '' || email == '' || password == '' || password == '') {
-        alert ("Please fill all fields...!!!");
-    }
-    submitHandler: function(form) {
-        form.submit();
-      }
-    }
-    
+$(document).ready(function () {
+    $('form[id="second_form"]').validate({
+        rules: {
+            fname: 'required',
+            lname: 'required',
+            user_email: {
+                required: true,
+                email: true,
+            },
+            psword: {
+                required: true,
+                minlength: 8,
+            }
+        },
+        messages: {
+            fname: 'This field is required',
+            lname: 'This field is required',
+            user_email: 'Enter a valid email',
+            psword: {
+                minlength: 'Password must be at least 8 characters long'
+            }
+        },
+        submitHandler: function (form) {
+            form.submit();
+        }
+    });
 
-// $(function() {
-//     // Initialize form validation on the registration form.
-//     // It has the name attribute "registration"
-//     $("form[name='registration']").validate({
-//       // Specify validation rules
-//       rules: {
-//         // The key name on the left side is the name attribute
-//         // of an input field. Validation rules are defined
-//         // on the right side
-//         firstname: "required",
-//         lastname: "required",
-//         email: {
-//           required: true,
-//           // Specify that email should be validated
-//           // by the built-in "email" rule
-//           email: true
-//         },
-//         password: {
-//           required: true,
-//           minlength: 5
-//         }
-//       },
-//       // Specify validation error messages
-//       messages: {
-//         firstname: "Please enter your firstname",
-//         lastname: "Please enter your lastname",
-//         password: {
-//           required: "Please provide a password",
-//           minlength: "Your password must be at least 5 characters long"
-//         },
-//         email: "Please enter a valid email address"
-//       },
-//       // Make sure the form is submitted to the destination defined
-//       // in the "action" attribute of the form when valid
-//       submitHandler: function(form) {
-//         form.submit();
-//       }
-//     });
-//   });
+    $('#first_form').submit(function (e) {
+        e.preventDefault();
+        var first_name = $('#first_name').val();
+        var last_name = $('#last_name').val();
+        var email = $('#email').val();
+        var password = $('#password').val();
+
+        $(".error").remove();
+
+        if (first_name.length < 1) {
+            $('#first_name').after('<span class="error">This field is required</span>');
+        }
+        if (last_name.length < 1) {
+            $('#last_name').after('<span class="error">This field is required</span>');
+        }
+        if (email.length < 1) {
+            $('#email').after('<span class="error">This field is required</span>');
+        } else {
+            var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/;
+            var validEmail = regEx.test(email);
+            if (!validEmail) {
+                $('#email').after('<span class="error">Enter a valid email</span>');
+            }
+        }
+        if (password.length < 8) {
+            $('#password').after('<span class="error">Password must be at least 8 characters long</span>');
+        }
+    });
+});
+   
+
+
