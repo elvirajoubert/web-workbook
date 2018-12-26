@@ -1,0 +1,35 @@
+form label {
+  display: inline-block;
+  width: 100px;
+  
+  
+}
+h2 {
+  display: flex;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ .container-box {
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   font-weight: bold;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ }
+form div {
+  margin-bottom: 30px;
+}
+
+
+  
+
+ 
+.error {
+  color: red;
+  margin-left: 5px;
+}
+
+label.error {
+  display: inline;
+}
